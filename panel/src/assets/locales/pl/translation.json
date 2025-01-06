@@ -1,0 +1,13 @@
+{
+    "app-name": "Kram sukiennika",
+    "login": "Zalguj",
+    "logout": "Wyloguj",
+    "login-page":{
+        "label":"Podaj identyfikator:",
+        "placeholder":"(Identyfikator)"
+    },
+    "shop-select-page":{
+        "placeholder":"(Wybierz sklep)",
+        "button":"Otwórz panel"
+    }
+  }

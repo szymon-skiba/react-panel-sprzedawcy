@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Federant&family=MedievalSharp&display=swap');
+
+:root {
+  --font-federant: 'Federant', serif;
+  --font-medieval: 'MedievalSharp', serif;
+}
+
+
+/* LIGHT MODE */
+:root {
+  /* Niebieski (Blue) */
+  --blue-1: #97CDFF;
+  --blue-2: #689AC3;
+  --blue-3: #386887;
+  --blue-4: #09354B;
+  --blue-5: #042838;
+  --blue-6: #001A25;
+
+  /* Żółty (Yellow) */
+  --yellow-1: #FFF478;
+  --yellow-2: #FFC500;
+  --yellow-3: #C99800;
+  --yellow-4: #926C00;
+  --yellow-5: #5B3F00;
+  --yellow-6: #251200;
+
+  /* Brązowy (Brown) */
+  --brown-1: #FFF1E3;
+  --brown-2: #BBA08D;
+  --brown-3: #764E36;
+  --brown-4: #5E3824;
+  --brown-5: #452312;
+  --brown-6: #2D0D00;
+
+  /* Szary (Grey) */
+  --grey-1: #F4F4F4;
+  --grey-2: #A4A1A0;
+  --grey-3: #534E4B;
+  --grey-4: #423B37;
+  --grey-5: #322924;
+  --grey-6: #211610;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  --blue-3: #001A25;
+  --grey-6: #689AC3;
+  --grey-2: #423B37;
+  --grey-3: #211610;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+  color: var(--grey-6);
+}
+
+body{
+  margin:0;
+}
+

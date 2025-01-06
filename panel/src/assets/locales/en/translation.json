@@ -1,0 +1,13 @@
+{
+    "app-name": "Draper's Booth",
+    "login": "Login",
+    "logout": "Logout",
+    "login-page":{
+        "label":"Enter identifier:",
+        "placeholder":"(Identifier)"
+    },
+    "shop-select-page":{
+        "placeholder":"(Choose shop)",
+        "button":"Go to dashboard"
+    }
+  }
