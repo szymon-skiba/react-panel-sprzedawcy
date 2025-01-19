@@ -1,0 +1,45 @@
+.containerMenu {
+  background-color: var(--blue-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  container: inline-size;
+}
+
+.optionsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+  font-family: var(--font-federant);
+  font-size: 20px;
+}
+
+.changeShop {
+  margin-top: 40px;
+}
+
+.menuWithLogout {
+  margin-top: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.optionLabel {
+  font-family: var(--font-medieval);
+  margin: 10px;
+  font-size: small;
+}

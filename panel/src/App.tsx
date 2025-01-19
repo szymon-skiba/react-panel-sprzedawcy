@@ -1,13 +1,16 @@
-import React from 'react';
-import AppRoutes from './routes/AppRoutes';
-import { ThemeProvider } from './ThemeContext';
-import './i18n'; 
+import React from "react";
+import AppRoutes from "./routes/AppRoutes";
+import { ThemeProvider } from "./context/ThemeContext";
+import "./i18n";
+import { UserContextProvider } from "./context/UserContext";
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider>
-      <AppRoutes />
-    </ThemeProvider>
+      <UserContextProvider>
+        <ThemeProvider>
+          <AppRoutes />
+        </ThemeProvider>
+      </UserContextProvider>
   );
 };
 

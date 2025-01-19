@@ -1,0 +1,48 @@
+.buttonWrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 1000;
+  opacity: 0.9;
+  box-shadow: 3px 3px 14px var(--blue-shadow);
+}
+
+.buttonOuter {
+  position: relative;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.buttonWrapper:hover {
+  box-shadow: none;
+}
+
+.buttonWrapper:active {
+  box-shadow: 0px 0px 12px var(--blue-shadow);
+}
+
+.buttonInner {
+  position: absolute;
+  background-color: #f4a261;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.line {
+  stroke: #000;
+  stroke-width: 2px;
+}

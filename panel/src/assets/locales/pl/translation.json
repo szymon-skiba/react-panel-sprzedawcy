@@ -1,13 +1,94 @@
 {
-    "app-name": "Kram sukiennika",
-    "login": "Zalguj",
-    "logout": "Wyloguj",
-    "login-page":{
-        "label":"Podaj identyfikator:",
-        "placeholder":"(Identyfikator)"
+  "app-name": "Kram sukiennika",
+  "login": "Zaloguj",
+  "logout": "Wyloguj",
+  "urls": {
+    "/": "/",
+    "login": "/logowanie",
+    "shop-selection": "/wybor-sklepu",
+    "sales-quality": "/jakosc-sprzedazy",
+    "orders": "/zamowienia",
+    "offers-listing": "/oferty",
+    "customer-opinions": "/opinie-kupujacych",
+    "dashboard": "/panel"
+  },
+  "pages": {
+    "login-page": {
+      "title": "Panel logowania",
+      "password-label": "Wprowadź hasło:",
+      "password-placeholder": "(Hasło)",
+      "username-label": "Wprowadź nazwę użytkownika:",
+      "username-placeholder": "(Nazwa użytkownika)",
+      "logged-in": "Jesteś już zalogowany/a",
+      "logged-in-button": "Otwórz panel",
+      "alert": "Nieprawidłowy login lub hasło"
     },
-    "shop-select-page":{
-        "placeholder":"(Wybierz sklep)",
-        "button":"Otwórz panel"
+    "shop-select-page": {
+      "title": "Wybór sklepu",
+      "placeholder": "(Wybierz sklep)",
+      "button": "Otwórz panel"
+    },
+    "dashboard": {
+      "changeShop": "Zmień sklep",
+      "shop": "Wybrany sklep:",
+      "user": "Zalogowany/a jako:"
+    },
+    "sales-quality-page": {
+      "title": "Jakość sprzedaży",
+      "title2": "Twój tytuł sprzedaży",
+      "aspects-label": "Wyniki aspektów sprzedaży",
+      "back-button": "<< Powrót"
+    },
+    "orders": {
+      "title": "Zamówienia",
+      "noShopSelected": "Nie wybrano sklepu, brak danych do wyświetlenia",
+      "allOrders": "wszystkie zamówienia",
+      "notFound": "Brak zamówień do wyświetlenia",
+      "offerName": "Oferta",
+      "amountOrdered": "Ilość szt.",
+      "totalGain": "Utarg (grosze)",
+      "status": "Status",
+      "timestamp": "Data Realizacji",
+      "userEmail": "Zamawiający",
+      "unknownOffer": "Nieznana",
+      "unknownUser": "Nieznany"
+    },
+    "offers-listing-page": {
+      "title": "Oferty"
+    },
+    "customer-opinions-page": {
+      "title": "Opinie kupujących"
+    }
+  },
+  "quality-aspects": {
+    "ArmorCraftsmanship": "Zbrojownictwo",
+    "WeaponSharpness": "Ostrość Broni",
+    "PotionPotency": "Moc Eliksirów",
+    "Hospitality": "Gościnność",
+    "GuardReadiness": "Gotowość Straży"
+  },
+  "quality-ranks": {
+    "Novice": "Żółtodziób",
+    "Trickster": "Kombinator",
+    "Ruffian": "Rzeźimieszek",
+    "Boss": "Szef",
+    "BigFish": "Gruba Ryba"
+  },
+  "order-status": {
+    "unsent": "Niewysłane",
+    "unpaid": "Nieopłacone",
+    "returned": "Zwróceone",
+    "completed": "Zrealizowane"
+  },
+  "widgets": {
+    "quality": {
+      "title": "Jakość sprzedaży",
+      "lowestScoreLabel": "Najniżej oceniane:",
+      "error-no-id": "Nie znalezniono sklepu",
+      "error-no-items": "Nie posiadasz jeszcze ocen aspektów, dodaj oferty i zacznij sprzedwać"
+    },
+    "orders": {
+      "title": "Zamówienia"
     }
   }
+}

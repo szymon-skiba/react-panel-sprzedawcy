@@ -1,13 +1,94 @@
 {
-    "app-name": "Draper's Booth",
-    "login": "Login",
-    "logout": "Logout",
-    "login-page":{
-        "label":"Enter identifier:",
-        "placeholder":"(Identifier)"
+  "app-name": "Draper's Booth",
+  "login": "Login",
+  "logout": "Logout",
+  "urls": {
+    "/": "/",
+    "login": "/login",
+    "shop-selection": "/shop-selection",
+    "sales-quality": "/sales-quality",
+    "orders": "/orders",
+    "offers-listing": "/offers-listing",
+    "customer-opinions": "/customer-opinions",
+    "dashboard": "/dashboard"
+  },
+  "pages": {
+    "login-page": {
+      "title": "Login panel",
+      "password-label": "Enter password:",
+      "password-placeholder": "(Password)",
+      "username-label": "Enter username:",
+      "username-placeholder": "(Username)",
+      "logged-in": "You're already logged in",
+      "logged-in-button": "Go to dashboard",
+      "alert": "Incorrect login or password"
     },
-    "shop-select-page":{
-        "placeholder":"(Choose shop)",
-        "button":"Go to dashboard"
+    "shop-select-page": {
+      "title": "Shop selection",
+      "placeholder": "(Choose shop)",
+      "button": "Go to dashboard"
+    },
+    "dashboard": {
+      "changeShop": "Change shop",
+      "shop": "Chosen shop:",
+      "user": "Logged in user:"
+    },
+    "sales-quality-page": {
+      "title": "Sales Quality",
+      "title2": "Your sales title",
+      "aspects-label": "Sales aspect scores",
+      "back-button": "<< Back"
+    },
+    "orders": {
+      "title": "Orders",
+      "noShopSelected": "No shop selected, no data to display",
+      "allOrders": "All orders",
+      "notFound": "No orders to display",
+      "offerName": "Offer",
+      "amountOrdered": "Amount ordered",
+      "totalGain": "Total gain",
+      "status": "Status",
+      "timestamp": "Realization date",
+      "userEmail": "User email",
+      "unknownOffer": "Unknown",
+      "unknownUser": "Unknown"
+    },
+    "offers-listing-page": {
+      "title": "Offers Listing"
+    },
+    "customer-opinions-page": {
+      "title": "Customer Opinions"
+    }
+  },
+  "quality-aspects": {
+    "ArmorCraftsmanship": "Armor Craftsmanship",
+    "WeaponSharpness": "Weapon Sharpness",
+    "PotionPotency": "Potion Potency",
+    "Hospitality": "Hospitality",
+    "GuardReadiness": "Guard Readiness"
+  },
+  "quality-ranks": {
+    "Novice": "Novice",
+    "Trickster": "Trickster",
+    "Ruffian": "Ruffian",
+    "Boss": "Boss",
+    "BigFish": "BigFish"
+  },
+  "order-status": {
+    "unsent": "Unsent",
+    "unpaid": "Unpaid",
+    "returned": "Returned",
+    "completed": "Completed"
+  },
+  "widgets": {
+    "quality": {
+      "title": "Shop quality score",
+      "lowestScoreLabel": "Lowest score:",
+      "error-no-id": "Shop not found",
+      "error-no-items": "No aspect scores yet, add offers and start selling"
+    },
+    "orders": {
+      "title": "Orders"
     }
   }
+}
