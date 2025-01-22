@@ -1,0 +1,56 @@
+.scoreSpan {
+  color: var(--yellow-2-button-text);
+}
+
+.rankSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowestSection {
+  text-align: center;
+}
+
+.aspectContainer {
+  display: flex;
+  justify-content: space-around;
+  min-width: 450px;
+}
+
+.aspectBox {
+  width: 33%;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.aspectName {
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.aspectScore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--brown-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border: 3px solid var(--grey-6);
+  color: var(--yellow-2-button-text);
+}

@@ -1,64 +1,82 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Federant&family=MedievalSharp&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Federant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Federant&family=MedievalSharp&display=swap");
 
 :root {
-  --font-federant: 'Federant', serif;
-  --font-medieval: 'MedievalSharp', serif;
+  --font-federant: "Federant", serif;
+  --font-medieval: "MedievalSharp", serif;
 }
-
 
 /* LIGHT MODE */
 :root {
   /* Niebieski (Blue) */
-  --blue-1: #97CDFF;
-  --blue-2: #689AC3;
+  --blue-1: #97cdff;
+  --blue-2: #689ac3;
   --blue-3: #386887;
-  --blue-4: #09354B;
+  --blue-4: #09354b;
   --blue-5: #042838;
-  --blue-6: #001A25;
+  --blue-6: #001a25;
+  --blue-shadow: rgb(0, 26, 37, 0.5);
 
   /* Żółty (Yellow) */
-  --yellow-1: #FFF478;
-  --yellow-2: #FFC500;
-  --yellow-3: #C99800;
-  --yellow-4: #926C00;
-  --yellow-5: #5B3F00;
+  --yellow-1: #fff478;
+  --yellow-2: #ffc500;
+  --yellow-2-button-text: #ffc500;
+  --yellow-3: #c99800;
+  --yellow-4: #926c00;
+  --yellow-5: #5b3f00;
   --yellow-6: #251200;
 
   /* Brązowy (Brown) */
-  --brown-1: #FFF1E3;
-  --brown-2: #BBA08D;
-  --brown-3: #764E36;
-  --brown-4: #5E3824;
+  --brown-1: #fff1e3;
+  --brown-2: #bba08d;
+  --brown-3: #764e36;
+  --brown-4: #5e3824;
   --brown-5: #452312;
-  --brown-6: #2D0D00;
+  --brown-6: #2d0d00;
 
   /* Szary (Grey) */
-  --grey-1: #F4F4F4;
-  --grey-2: #A4A1A0;
-  --grey-3: #534E4B;
-  --grey-4: #423B37;
+  --grey-1: #f4f4f4;
+  --grey-2: #a4a1a0;
+  --grey-3: #534e4b;
+  --grey-4: #423b37;
   --grey-5: #322924;
   --grey-6: #211610;
 }
 
 /* DARK MODE */
 body.dark-mode {
-  --blue-3: #001A25;
-  --grey-6: #689AC3;
-  --grey-2: #423B37;
+  --blue-2: #001a25;
+  --blue-3: #386887;
+  --blue-shadow: rgb(151, 205, 255, 0.2);
+
+  --yellow-1: #fff478;
+  --yellow-2: #251200;
+  --yellow-2-button-text: #689ac3;
+  --yellow-3: #c99800;
+  --yellow-4: #926c00;
+  --yellow-5: #5b3f00;
+  --yellow-6: #251200;
+
+  --brown-1: #fff1e3;
+  --brown-2: #bba08d;
+  --brown-3: #534e4b;
+  --brown-4: #322924;
+  --brown-5: #452312;
+  --brown-6: #2d0d00;
+
+  --grey-1: #211610;
+  --grey-2: #423b37;
   --grey-3: #211610;
+  --grey-6: #689ac3;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   color: var(--grey-6);
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
 }
-

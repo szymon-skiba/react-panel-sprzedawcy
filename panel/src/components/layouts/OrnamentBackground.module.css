@@ -1,0 +1,43 @@
+.ornamentBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.childrenWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.ornament {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background: url("../../assets/ornament.png") no-repeat center center;
+  background-size: contain;
+}
+
+.ornament.top-left {
+  top: 0;
+  left: 0;
+}
+
+.ornament.top-right {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.ornament.bottom-left {
+  bottom: 0;
+  left: 0;
+  transform: rotate(270deg);
+}
+
+.ornament.bottom-right {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
