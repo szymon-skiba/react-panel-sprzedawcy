@@ -1,0 +1,35 @@
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+  
+  .statusRow {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    max-height: 46px;
+  }
+  
+  .statusRow div {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .statusNumber {
+    background-color: var(--grey-1);
+    width: 120px;
+    height: 44px;
+    border: 2px solid var(--grey-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rowlabel {
+    color: var(--yellow-2-button-text);
+    font-size: 15px;
+    font-weight: 200;
+  }
+  

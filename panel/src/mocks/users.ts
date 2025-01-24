@@ -4,7 +4,7 @@ import { User } from "../types/types";
 const users: User[] = [
   {
     id: "1",
-    username: "user1",
+    username: "RycerzZTępymMieczem",
     password: "password",
     email: "rycerz@zamek.pl",
     photo: userPhoto,

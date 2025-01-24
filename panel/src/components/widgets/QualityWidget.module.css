@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  /* Zwiększamy odstęp między elementami */
+    margin-top: 0px;  /* Obniżamy pierwszy element */
+    padding: 0 20px 20px;
+}
+
+.aspectsList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  /* Zwiększamy odstęp między aspektami */
+}
+
+.aspectItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 

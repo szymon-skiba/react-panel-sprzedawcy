@@ -1,0 +1,142 @@
+.chartContainer {
+    padding: 0 20px 20px;
+    display: flex;
+    gap: 20px;
+    height: 500px;
+}
+
+.controlSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0px;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputGroup label {
+    color: var(--brown-10);
+    font-size: 15px;
+    font-weight: 200;
+    font-family: var(--font-medieval);
+}
+
+.select {
+    padding: 8px;
+    border: 3px solid var(--grey-6);
+    background-color: var(--brown-3);
+    width: 100%;
+    height: 44px;
+    color: var(--grey-1);
+    font-size: 15px;
+    font-weight: 200;
+    font-family: var(--font-medieval);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 30px;
+}
+
+.select option {
+    background-color: var(--brown-3);
+    color: var(--grey-1);
+    font-weight: 200;
+}
+
+.input {
+    padding: 8px;
+    border: 3px solid var(--grey-6);
+    background-color: var(--grey-1);
+    width: 100%;
+    height: 44px;
+    font-family: var(--font-medieval);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.dateRange {
+    display: flex;
+    gap: 20px;
+}
+
+.dateRange .inputGroup {
+    flex: 1;
+}
+
+.dateRange .input {
+    width: 130px;
+    margin-right: 20px;
+}
+
+.dateRange .inputGroup label {
+    color: var(--brown-10);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--font-medieval);
+}
+
+.seriesList {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.seriesItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.seriesItem.active {
+    border-color: var(--grey-6);
+    background-color: var(--grey-1);
+}
+
+.colorBox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-6);
+}
+
+.chartSection {
+    margin-top: 40px;
+    flex: 1;
+    height: 380px;
+    border: 2px solid var(--grey-6);
+    background-color: var(--grey-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.chartSection > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+} 

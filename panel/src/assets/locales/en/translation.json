@@ -89,6 +89,45 @@
     },
     "orders": {
       "title": "Orders"
+    },
+    "offers-listing-widget": {
+      "title": "Offers Listing",
+      "choose-criteria": "Choose sorting criteria",
+      "criteria-1": "Most viewed",
+      "criteria-2": "Least viewed",
+      "see-all": "List of offers",
+      "icon": "Icon",
+      "name": "Name",
+      "price": "Price",
+      "view-amount": "View amount"
+    },
+    "sales-chart": {
+      "title": "Sales Chart",
+      "error-no-id": "No shop selected",
+      "measure": "Presented measure",
+      "turnover": "Turnover",
+      "sold-units": "Units sold",
+      "chart-type": "Chart type",
+      "bar": "Bar chart",
+      "line": "Line chart",
+      "from": "From",
+      "to": "To",
+      "add-series": "Add series",
+      "select": "(Select)"
+    },
+    "offers-ranking-widget": {
+      "title": "Offers Ranking",
+      "choose-criteria": "Choose sorting criteria",
+      "most-sold": "Most frequently bought",
+      "least-sold": "Least frequently bought",
+      "highest-turnover": "Highest turnover",
+      "least-viewed": "Least viewed",
+      "see-all": "See all",
+      "icon": "Icon",
+      "name": "Name",
+      "sold-amount": "Units sold",
+      "turnover": "Turnover",
+      "views": "Views"
     }
   }
 }

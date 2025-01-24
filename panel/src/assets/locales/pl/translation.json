@@ -70,7 +70,7 @@
   "quality-ranks": {
     "Novice": "Żółtodziób",
     "Trickster": "Kombinator",
-    "Ruffian": "Rzeźimieszek",
+    "Ruffian": "Rzezimieszek",
     "Boss": "Szef",
     "BigFish": "Gruba Ryba"
   },
@@ -89,6 +89,50 @@
     },
     "orders": {
       "title": "Zamówienia"
+    },
+    "offers-listing-widget": {
+      "title": "Ranking ofert",
+      "choose-criteria": "Wybierz kryterium sortowania",
+      "most-sold": "Najczęściej kupowane",
+      "least-sold": "Najrzadziej kupowane",
+      "highest-turnover": "Największy obrót",
+      "least-viewed": "Najmniej wyświetleń",
+      "see-all": "Zobacz wszystkie",
+      "icon": "Ikona",
+      "name": "Nazwa",
+      "sold-amount": "Sprzedane sztuki",
+      "turnover": "Obrót",
+      "views": "Wyświetlenia"
+    },
+    "sales-chart": {
+      "title": "Wykres sprzedaży",
+      "error-no-id": "Nie wybrano sklepu",
+      "measure": "Prezentowana miara",
+      "turnover": "Obrót",
+      "sold-units": "Liczba sprzedanych sztuk",
+      "chart-type": "Sposób prezentacji",
+      "bar": "Wykres słupkowy",
+      "line": "Wykres liniowy",
+      "from": "Od",
+      "to": "Do",
+      "add-series": "Dodaj serię",
+      "select-measure": "(Wybierz miarę)",
+      "select-type": "(Wybierz typ wykresu)"
+    },
+    "offers-ranking-widget": {
+      "title": "Ranking ofert",
+      "choose-criteria": "Wybierz kryterium sortowania",
+      "most-sold": "Najczęściej kupowane",
+      "least-sold": "Najrzadziej kupowane",
+      "highest-turnover": "Największy obrót",
+      "least-viewed": "Najmniej wyświetleń",
+      "see-all": "Zobacz wszystkie",
+      "icon": "Ikona",
+      "name": "Nazwa",
+      "sold-amount": "Sprzedane sztuki",
+      "turnover": "Obrót",
+      "views": "Wyświetlenia"
     }
   }
 }
+

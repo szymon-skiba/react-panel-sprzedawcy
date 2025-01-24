@@ -26,3 +26,13 @@ export const getOrdersByStatus = (selectedShopId: string) => {
 export const getOfferById = (id: string): Offer | undefined => {
   return offers.find((offer) => offer.id === id);
 };
+
+export const findTurnoverForOffer = (offerId: string): number => {
+  const offerOrders = orders.filter((order) => order.offerId === offerId);
+  return offerOrders.reduce((sum, order) => sum + order.totalGain, 0);
+};
+
+export const findAmountOfSoldItemsForOffer = (offerId: string): number => {
+  const offerOrders = orders.filter((order) => order.offerId === offerId);
+  return offerOrders.reduce((sum, order) => sum + order.amountOrdered, 0);
+};
