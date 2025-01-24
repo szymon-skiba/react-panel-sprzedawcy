@@ -63,4 +63,12 @@ export type Order = {
   timestamp:string
 };
 
+export type CustomerOpinion = {
+  id: number;
+  username: string;
+  opinion: string;
+  rating: number;
+  timestamp: string;
+  customerIcon: string;
+};
 

@@ -44,11 +44,12 @@ const SalesChartWidget: React.FC = () => {
     const [newSeries, setNewSeries] = useState<ChartSeries>({
         name: `Seria ${series.length + 1}`,
         color: `var(--blue-1)`,
-        measure: "turnover",
-        chartType: "bar",
+        measure: "",
+        chartType: "",
         timeRange: { from: "", to: "" }
     });
     const [activeSeries, setActiveSeries] = useState<number>(0);
+    const [timeUnit, setTimeUnit] = useState<'day' | 'week' | 'month'>('');
 
     if (!selectedShopId) {
         return (
@@ -82,30 +83,15 @@ const SalesChartWidget: React.FC = () => {
         const startDate = new Date(timeRange.from);
         const endDate = new Date(timeRange.to);
 
-        // Filtrujemy zamówienia po zakresie dat
         const filteredOrders = orders.filter(order => {
             const orderDate = new Date(order.timestamp);
             return orderDate >= startDate && orderDate <= endDate;
         });
 
-        // Sprawdzamy różnicę w dniach
-        const daysDiff = Math.floor((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
-        
-        // Wybieramy format grupowania
-        let groupingFormat: 'day' | 'week' | 'month';
-        if (daysDiff <= 7) {
-            groupingFormat = 'day';
-        } else if (daysDiff <= 31) {
-            groupingFormat = 'week';
-        } else {
-            groupingFormat = 'month';
-        }
-
-        // Funkcja pomocnicza do generowania klucza
         const getGroupKey = (date: Date) => {
-            if (groupingFormat === 'day') {
+            if (timeUnit === 'day') {
                 return date.toISOString().split('T')[0];
-            } else if (groupingFormat === 'week') {
+            } else if (timeUnit === 'week') {
                 const weekStart = new Date(date);
                 weekStart.setDate(date.getDate() - date.getDay());
                 return weekStart.toISOString().split('T')[0];
@@ -114,7 +100,6 @@ const SalesChartWidget: React.FC = () => {
             }
         };
 
-        // Grupujemy zamówienia
         const groupedData = filteredOrders.reduce((acc, order) => {
             const date = new Date(order.timestamp);
             const groupKey = getGroupKey(date);
@@ -132,10 +117,9 @@ const SalesChartWidget: React.FC = () => {
             return acc;
         }, {} as Record<string, { turnover: number; soldAmount: number }>);
 
-        // Sortujemy klucze
         const sortedKeys = Object.keys(groupedData).sort();
 
-        // Formatujemy etykiety
+        const groupingFormat = timeUnit;
         const labels = sortedKeys.map(key => {
             if (groupingFormat === 'day') {
                 return new Date(key).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long' });
@@ -149,7 +133,6 @@ const SalesChartWidget: React.FC = () => {
             }
         });
 
-        // Wybieramy odpowiednie dane
         const data = sortedKeys.map(key => 
             measure === 'turnover' ? groupedData[key].turnover : groupedData[key].soldAmount
         );
@@ -208,7 +191,6 @@ const SalesChartWidget: React.FC = () => {
         }
     };
 
-    // Używamy danych aktywnej serii w polach wyboru
     const activeSeriesData = series[activeSeries] || newSeries;
 
     return (
@@ -258,6 +240,19 @@ const SalesChartWidget: React.FC = () => {
                             <option value="">{t("widgets.sales-chart.select-type")}</option>
                             <option value="bar">{t("widgets.sales-chart.bar")}</option>
                             <option value="line">{t("widgets.sales-chart.line")}</option>
+                        </select>
+                    </div>
+
+                    <div className={styles.inputGroup}>
+                        <select
+                            value={timeUnit}
+                            onChange={(e) => setTimeUnit(e.target.value as 'day' | 'week' | 'month')}
+                            className={styles.select}
+                        >
+                            <option value="">{t("widgets.sales-chart.group-by")}</option>
+                            <option value="day">{t("widgets.sales-chart.day")}</option>
+                            <option value="week">{t("widgets.sales-chart.week")}</option>
+                            <option value="month">{t("widgets.sales-chart.month")}</option>
                         </select>
                     </div>
 

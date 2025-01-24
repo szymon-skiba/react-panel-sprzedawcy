@@ -90,17 +90,6 @@
     "orders": {
       "title": "Orders"
     },
-    "offers-listing-widget": {
-      "title": "Offers Listing",
-      "choose-criteria": "Choose sorting criteria",
-      "criteria-1": "Most viewed",
-      "criteria-2": "Least viewed",
-      "see-all": "List of offers",
-      "icon": "Icon",
-      "name": "Name",
-      "price": "Price",
-      "view-amount": "View amount"
-    },
     "sales-chart": {
       "title": "Sales Chart",
       "error-no-id": "No shop selected",
@@ -113,9 +102,14 @@
       "from": "From",
       "to": "To",
       "add-series": "Add series",
-      "select": "(Select)"
+      "select-measure": "(Choose measure)",
+      "select-type": "(Choose chart type)",
+      "day": "day",
+      "week": "week",
+      "month": "month",
+      "group-by": "(Group by)"
     },
-    "offers-ranking-widget": {
+    "offers-listing-widget": {
       "title": "Offers Ranking",
       "choose-criteria": "Choose sorting criteria",
       "most-sold": "Most frequently bought",
@@ -128,6 +122,13 @@
       "sold-amount": "Units sold",
       "turnover": "Turnover",
       "views": "Views"
+    },
+    "opinions-widget": {
+      "title": "Customer Opinions",
+      "select-sorting": "Choose sorting criteria",
+      "most-recent": "Most recent",
+      "best-rated": "Best rated",
+      "worst-rated": "Worst rated"
     }
   }
 }

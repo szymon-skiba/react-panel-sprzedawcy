@@ -1,0 +1,93 @@
+.opinionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; /* Zmniejszenie odstępów między opiniami */
+}
+
+.opinion {
+    background-color: var(--grey-1);
+    padding: 5px; /* Utrzymany zmniejszony padding */
+    border: 2px solid black; /* Dodano czarną obwódkę */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start; /* Wyrównanie elementów do góry */
+    gap: 5px;
+}
+
+.userIcon {
+    width: 20px; /* Rozmiar ikony użytkownika */
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 2px; /* Dostosowanie wysokości, aby była na równi z nazwą */
+}
+
+
+.opinionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Zmniejszono odstępy między nagłówkiem, opinią i oceną */
+}
+
+.opinionContent h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.opinionContent p {
+    margin: 0;
+    line-height: 1.2; /* Mniejszy odstęp między liniami tekstu */
+}
+
+.rating {
+    display: flex;
+    gap: 2px; /* Mniejszy odstęp między ikonami oceny */
+}
+
+.jewelIcon {
+    width: 18px; /* Mniejszy rozmiar ikon */
+    height: 18px;
+}
+
+.controlSection {
+    margin-bottom: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .select {
+    padding: 8px;
+    border: 3px solid var(--grey-6);
+    background-color: var(--brown-3);
+    width: 368px;
+    height: 44px;
+    color: var(--grey-1);
+    font-size: 15px;
+    font-weight: 200;
+    font-family: var(--font-medieval);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+  }
+  
+  .select:focus {
+    outline: none;
+  }
+  
+  .select option {
+    background-color: var(--brown-3);
+    color: var(--grey-1);
+    font-weight: 200;
+  }
+  
