@@ -1,0 +1,667 @@
+import { Offer } from "../types/types";
+import offerPhoto from "../assets/crown.png";
+
+const offers: Offer[] = [
+  {
+    id: "1",
+    shopId: "1",
+    name: "Zbroja Płytowa",
+    price: 150,
+    amountInStock: 10,
+    photo: offerPhoto,
+    numberOfViews: 250,
+  },
+  {
+    id: "2",
+    shopId: "1",
+    name: "Miecz Dwuręczny",
+    price: 200,
+    amountInStock: 5,
+    photo: offerPhoto,
+    numberOfViews: 300,
+  },
+  {
+    id: "3",
+    shopId: "1",
+    name: "Eliksir Mocy",
+    price: 50,
+    amountInStock: 20,
+    photo: offerPhoto,
+    numberOfViews: 150,
+  },
+  {
+    id: "4",
+    shopId: "1",
+    name: "Pieśń Bohaterów",
+    price: 75,
+    amountInStock: 15,
+    photo: offerPhoto,
+    numberOfViews: 100,
+  },
+  {
+    id: "5",
+    shopId: "1",
+    name: "Tarcza Strażnika",
+    price: 120,
+    amountInStock: 8,
+    photo: offerPhoto,
+    numberOfViews: 220,
+  },
+  {
+    id: "6",
+    shopId: "1",
+    name: "Łuk Elficki",
+    price: 180,
+    amountInStock: 6,
+    photo: offerPhoto,
+    numberOfViews: 280,
+  },
+  {
+    id: "7",
+    shopId: "1",
+    name: "Magiczna Różdżka",
+    price: 250,
+    amountInStock: 3,
+    photo: offerPhoto,
+    numberOfViews: 400,
+  },
+  {
+    id: "8",
+    shopId: "1",
+    name: "Hełm Krasnoludzki",
+    price: 100,
+    amountInStock: 12,
+    photo: offerPhoto,
+    numberOfViews: 190,
+  },
+  {
+    id: "9",
+    shopId: "1",
+    name: "Sztylet Skrytobójcy",
+    price: 90,
+    amountInStock: 15,
+    photo: offerPhoto,
+    numberOfViews: 210,
+  },
+  {
+    id: "10",
+    shopId: "1",
+    name: "Zwój Teleportacji",
+    price: 45,
+    amountInStock: 25,
+    photo: offerPhoto,
+    numberOfViews: 170,
+  },
+  {
+    id: "11",
+    shopId: "1",
+    name: "Pierścień Niewidzialności",
+    price: 300,
+    amountInStock: 2,
+    photo: offerPhoto,
+    numberOfViews: 450,
+  },
+  {
+    id: "12",
+    shopId: "1",
+    name: "Księga Zaklęć",
+    price: 160,
+    amountInStock: 7,
+    photo: offerPhoto,
+    numberOfViews: 320,
+  },
+  {
+    id: "13",
+    shopId: "1",
+    name: "Amulet Ochronny",
+    price: 85,
+    amountInStock: 18,
+    photo: offerPhoto,
+    numberOfViews: 230,
+  },
+  {
+    id: "14",
+    shopId: "1",
+    name: "Smoczy Pancerz",
+    price: 400,
+    amountInStock: 1,
+    photo: offerPhoto,
+    numberOfViews: 500,
+  },
+  {
+    id: "15",
+    shopId: "1",
+    name: "Buty Szybkości",
+    price: 110,
+    amountInStock: 9,
+    photo: offerPhoto,
+    numberOfViews: 260,
+  }
+];
+
+export default offers;
+import { Order } from "../types/types";
+
+const orders: Order[] = [
+  {
+    id: "1",
+    offerId: "1",
+    amountOrdered: 2,
+    gainPerItem: 150,
+    totalGain: 300,
+    userId: "3",
+    status: "completed",
+    timestamp: "2024-12-02T10:15:00Z",
+  },
+  {
+    id: "2",
+    offerId: "1",
+    amountOrdered: 1,
+    gainPerItem: 150,
+    totalGain: 150,
+    userId: "4",
+    status: "unpaid",
+    timestamp: "2024-12-05T14:30:00Z",
+  },
+  {
+    id: "3",
+    offerId: "2",
+    amountOrdered: 3,
+    gainPerItem: 120,
+    totalGain: 360,
+    userId: "5",
+    status: "unsent",
+    timestamp: "2024-12-08T09:45:00Z",
+  },
+  {
+    id: "4",
+    offerId: "3",
+    amountOrdered: 5,
+    gainPerItem: 80,
+    totalGain: 400,
+    userId: "2",
+    status: "returned",
+    timestamp: "2024-12-10T16:00:00Z",
+  },
+  {
+    id: "5",
+    offerId: "4",
+    amountOrdered: 4,
+    gainPerItem: 100,
+    totalGain: 400,
+    userId: "1",
+    status: "completed",
+    timestamp: "2024-12-12T13:15:00Z",
+  },
+  {
+    id: "6",
+    offerId: "1",
+    amountOrdered: 6,
+    gainPerItem: 150,
+    totalGain: 900,
+    userId: "2",
+    status: "completed",
+    timestamp: "2024-12-15T11:45:00Z",
+  },
+  {
+    id: "7",
+    offerId: "2",
+    amountOrdered: 2,
+    gainPerItem: 120,
+    totalGain: 240,
+    userId: "3",
+    status: "unsent",
+    timestamp: "2024-12-20T18:30:00Z",
+  },
+  {
+    id: "8",
+    offerId: "3",
+    amountOrdered: 1,
+    gainPerItem: 80,
+    totalGain: 80,
+    userId: "4",
+    status: "unpaid",
+    timestamp: "2024-12-22T14:50:00Z",
+  },
+  {
+    id: "9",
+    offerId: "4",
+    amountOrdered: 3,
+    gainPerItem: 100,
+    totalGain: 300,
+    userId: "5",
+    status: "returned",
+    timestamp: "2024-12-25T09:30:00Z",
+  },
+  {
+    id: "10",
+    offerId: "1",
+    amountOrdered: 2,
+    gainPerItem: 150,
+    totalGain: 300,
+    userId: "4",
+    status: "completed",
+    timestamp: "2024-12-28T17:15:00Z",
+  },
+  {
+    id: "11",
+    offerId: "2",
+    amountOrdered: 4,
+    gainPerItem: 120,
+    totalGain: 480,
+    userId: "1",
+    status: "completed",
+    timestamp: "2025-01-02T12:00:00Z",
+  },
+  {
+    id: "12",
+    offerId: "3",
+    amountOrdered: 7,
+    gainPerItem: 80,
+    totalGain: 560,
+    userId: "2",
+    status: "unsent",
+    timestamp: "2025-01-05T08:45:00Z",
+  },
+  {
+    id: "13",
+    offerId: "4",
+    amountOrdered: 3,
+    gainPerItem: 100,
+    totalGain: 300,
+    userId: "3",
+    status: "unpaid",
+    timestamp: "2025-01-08T15:30:00Z",
+  },
+  {
+    id: "14",
+    offerId: "1",
+    amountOrdered: 1,
+    gainPerItem: 150,
+    totalGain: 150,
+    userId: "5",
+    status: "completed",
+    timestamp: "2025-01-10T19:00:00Z",
+  },
+  {
+    id: "15",
+    offerId: "2",
+    amountOrdered: 5,
+    gainPerItem: 120,
+    totalGain: 600,
+    userId: "4",
+    status: "returned",
+    timestamp: "2025-01-13T11:20:00Z",
+  },
+];
+
+export default orders;
+import { Shop } from "../types/types";
+
+const shops: Shop[] = [
+  { id: "1", name: "Zbrojownia Rycerza", userId: "1" },
+  { id: "2", name: "Kowadło Mistrza Kowala", userId: "2" },
+  { id: "3", name: "Wieża Czarodzieja", userId: "3" },
+  { id: "4", name: "Tawerna Barda", userId: "4" },
+  { id: "5", name: "Strażnica Zamkowa", userId: "5" },
+  { id: "6", name: "Warsztat Rycerza", userId: "1" },
+];
+
+export default shops;
+import { QualityAspect, ShopQualityScore } from "../types/types";
+
+const shopScores: ShopQualityScore[] = [
+  {
+    shopId: "1",
+    scores: [
+      { aspect: QualityAspect.ArmorCraftsmanship, points: 80, maxPoints: 100 },
+      { aspect: QualityAspect.WeaponSharpness, points: 70, maxPoints: 100 },
+      { aspect: QualityAspect.PotionPotency, points: 60, maxPoints: 100 },
+      { aspect: QualityAspect.Hospitality, points: 50, maxPoints: 100 },
+      { aspect: QualityAspect.GuardReadiness, points: 85, maxPoints: 100 },
+    ],
+  },
+  {
+    shopId: "2",
+    scores: [
+      { aspect: QualityAspect.ArmorCraftsmanship, points: 90, maxPoints: 100 },
+      { aspect: QualityAspect.WeaponSharpness, points: 95, maxPoints: 100 },
+      { aspect: QualityAspect.PotionPotency, points: 40, maxPoints: 100 },
+      { aspect: QualityAspect.Hospitality, points: 60, maxPoints: 100 },
+      { aspect: QualityAspect.GuardReadiness, points: 75, maxPoints: 100 },
+    ],
+  },
+  {
+    shopId: "3",
+    scores: [
+      { aspect: QualityAspect.ArmorCraftsmanship, points: 30, maxPoints: 100 },
+      { aspect: QualityAspect.WeaponSharpness, points: 20, maxPoints: 100 },
+      { aspect: QualityAspect.PotionPotency, points: 100, maxPoints: 100 },
+      { aspect: QualityAspect.Hospitality, points: 65, maxPoints: 100 },
+      { aspect: QualityAspect.GuardReadiness, points: 55, maxPoints: 100 },
+    ],
+  },
+  {
+    shopId: "4",
+    scores: [
+      { aspect: QualityAspect.ArmorCraftsmanship, points: 40, maxPoints: 100 },
+      { aspect: QualityAspect.WeaponSharpness, points: 50, maxPoints: 100 },
+      { aspect: QualityAspect.PotionPotency, points: 30, maxPoints: 100 },
+      { aspect: QualityAspect.Hospitality, points: 90, maxPoints: 100 },
+      { aspect: QualityAspect.GuardReadiness, points: 60, maxPoints: 100 },
+    ],
+  },
+  {
+    shopId: "5",
+    scores: [
+      { aspect: QualityAspect.ArmorCraftsmanship, points: 85, maxPoints: 100 },
+      { aspect: QualityAspect.WeaponSharpness, points: 80, maxPoints: 100 },
+      { aspect: QualityAspect.PotionPotency, points: 50, maxPoints: 100 },
+      { aspect: QualityAspect.Hospitality, points: 55, maxPoints: 100 },
+      { aspect: QualityAspect.GuardReadiness, points: 95, maxPoints: 100 },
+    ],
+  },
+  {
+    shopId: "6",
+    scores: [
+      { aspect: QualityAspect.ArmorCraftsmanship, points: 88, maxPoints: 100 },
+      { aspect: QualityAspect.WeaponSharpness, points: 77, maxPoints: 100 },
+      { aspect: QualityAspect.PotionPotency, points: 60, maxPoints: 100 },
+      { aspect: QualityAspect.Hospitality, points: 50, maxPoints: 100 },
+      { aspect: QualityAspect.GuardReadiness, points: 78, maxPoints: 100 },
+    ],
+  },
+];
+
+export default shopScores;
+import userPhoto from "../assets/user.png";
+import { User } from "../types/types";
+
+const users: User[] = [
+  {
+    id: "1",
+    username: "RycerzZTępymMieczem",
+    password: "password",
+    email: "rycerz@zamek.pl",
+    photo: userPhoto,
+  },
+  {
+    id: "2",
+    username: "MistrzKowal",
+    password: "password",
+    email: "kowal@zamek.pl",
+    photo: userPhoto,
+  },
+  {
+    id: "3",
+    username: "CzarodziejZBieli",
+    password: "password",
+    email: "czarodziej@zamek.pl",
+    photo: userPhoto,
+  },
+  {
+    id: "4",
+    username: "BardZeZłotejLutni",
+    password: "password",
+    email: "bard@zamek.pl",
+    photo: userPhoto,
+  },
+  {
+    id: "5",
+    username: "StrażnikZamkowychWrót",
+    password: "password",
+    email: "straznik@zamek.pl",
+    photo: userPhoto,
+  },
+];
+
+export default users;
+import users from "../mocks/users";
+import { User } from "../types/types";
+
+export const isAuthenticated = (): boolean =>
+  !!localStorage.getItem("authToken");
+
+export const logout = (
+  setUser: (user: User | null) => void,
+  setShopId: (shopId: string | null) => void
+) => {
+  setShopId(null);
+  setUser(null);
+  localStorage.removeItem("authToken");
+  localStorage.removeItem("shopId");
+};
+
+export const login = (
+  username: string,
+  password: string,
+  setUser: (user: User) => void
+): boolean => {
+  const user = users.find(
+    (uzytkownik) =>
+      uzytkownik.username === username && uzytkownik.password === password
+  );
+
+  if (user) {
+    localStorage.setItem(
+      "authToken",
+      JSON.stringify({ username: user.username })
+    );
+    setUser(user);
+    return true;
+  } else {
+    return false;
+  }
+};
+import offers from "../mocks/offers";
+import orders from "../mocks/orders";
+import { Offer, Order } from "../types/types";
+
+export const getOrdersByStatus = (selectedShopId: string) => {
+  const shopOffers = offers.filter((offer) => offer.shopId === selectedShopId);
+
+  const shopOrders = orders.filter((order) =>
+    shopOffers.some((offer) => offer.id === order.offerId)
+  );
+
+  const statusCategories = {
+    unsent: [] as Order[],
+    unpaid: [] as Order[],
+    returned: [] as Order[],
+    completed: [] as Order[],
+  };
+
+  shopOrders.forEach((order) => {
+    statusCategories[order.status].push(order);
+  });
+
+  return statusCategories;
+};
+
+export const getOfferById = (id: string): Offer | undefined => {
+  return offers.find((offer) => offer.id === id);
+};
+import shopScores from "../mocks/shopScores";
+import { QualityRank, ShopQualityScore } from "../types/types";
+
+export const isAuthenticated = (): boolean =>
+  !!localStorage.getItem("authToken");
+
+export interface QualityScore {
+  score: number;
+  maxScore: number;
+  rank: QualityRank;
+}
+
+export const getShopQualityAspectsScore = (
+  shopId: string
+): ShopQualityScore => {
+  const shopScore = shopScores.find((score) => score.shopId === shopId);
+  if (!shopScore) {
+    throw new Error(`Shop with ID ${shopId} not found`);
+  }
+  return shopScore;
+};
+
+const calculateQualityRank = (percentage: number): QualityRank => {
+  if (percentage >= 90) return QualityRank.BigFish;
+  if (percentage >= 75) return QualityRank.Boss;
+  if (percentage >= 60) return QualityRank.Ruffian;
+  if (percentage >= 45) return QualityRank.Trickster;
+  return QualityRank.Novice;
+};
+
+export const getShopQualityScore = (shopId: string): QualityScore => {
+  const shopScore = getShopQualityAspectsScore(shopId);
+
+  const totalPoints = shopScore.scores.reduce(
+    (sum, aspect) => sum + aspect.points,
+    0
+  );
+
+  const maxPoints = shopScore.scores.reduce(
+    (sum, aspect) => sum + aspect.maxPoints,
+    0
+  );
+
+  const percentage = (totalPoints / maxPoints) * 100;
+  const rank = calculateQualityRank(percentage);
+
+  return {
+    score: percentage,
+    maxScore: 100,
+    rank: rank,
+  };
+};
+import shops from "../mocks/shops";
+import users from "../mocks/users";
+import { Shop, User } from "../types/types";
+import { isAuthenticated } from "./authService";
+
+class UserService {
+  static getUserByUsername(username: string): User | undefined {
+    if (isAuthenticated()) {
+      return users.find((user) => user.username === username);
+    }
+    return undefined;
+  }
+
+  static getUserEmailById(id: string): string | undefined {
+    if (isAuthenticated()) {
+      return users.find((user) => user.id === id)?.email;
+    }
+    return undefined;
+  }
+
+  static getUserShops(userId: string): Shop[] | undefined {
+    if (isAuthenticated()) {
+      return shops.filter((shop) => shop.userId === userId);
+    }
+    return undefined;
+  }
+
+  static getUserShop(shopId: string): Shop | undefined {
+    if (isAuthenticated()) {
+      return shops.find((shop) => shop.id === shopId);
+    }
+    return undefined;
+  }
+}
+
+export default UserService;
+export type Shop = {
+  id: string;
+  name: string;
+  userId: string;
+};
+
+export type User = {
+  id: string;
+  username: string;
+  password: string;
+  email: string;
+  photo: string;
+};
+
+export enum QualityAspect {
+  ArmorCraftsmanship = "ArmorCraftsmanship",
+  WeaponSharpness = "WeaponSharpness",
+  PotionPotency = "PotionPotency",
+  Hospitality = "Hospitality",
+  GuardReadiness = "GuardReadiness"
+}
+
+export enum QualityRank {
+  Novice = "Novice",
+  Trickster = "Trickster",
+  Ruffian = "Ruffian",
+  Boss = "Boss",
+  BigFish = "BigFish"
+}
+
+export type AspectScore = {
+  aspect: QualityAspect;
+  points: number;
+  maxPoints: number;
+};
+
+export type ShopQualityScore = {
+  [x: string]: any;
+  shopId: string;
+  scores: AspectScore[];
+};
+
+export type Offer = {
+  id: string;
+  shopId: string;
+  name: string;
+  price: number;
+  amountInStock: number;
+  photo: string;
+  numberOfViews: number;
+};
+
+export type OrderStatus = 'unsent' | 'unpaid' | 'returned' | 'completed';
+
+export type Order = {
+  id: string;
+  offerId: string;
+  amountOrdered: number;
+  gainPerItem: number;
+  totalGain: number;
+  userId: string; 
+  status: OrderStatus;
+  timestamp:string
+};
+
+
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+import enTranslation from "./assets/locales/en/translation.json";
+import plTranslation from "./assets/locales/pl/translation.json";
+
+const savedLanguage = localStorage.getItem("i18nextLng") || "pl";
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: enTranslation,
+    },
+    pl: {
+      translation: plTranslation,
+    },
+  },
+  lng: savedLanguage,
+  fallbackLng: "pl",
+  interpolation: {
+    escapeValue: false,
+  },
+});
+
+i18n.on("languageChanged", (lng) => {
+  localStorage.setItem("i18nextLng", lng);
+});
+
+export default i18n;
+/// <reference types="vite/client" />

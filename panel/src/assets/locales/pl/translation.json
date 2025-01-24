@@ -90,20 +90,6 @@
     "orders": {
       "title": "Zamówienia"
     },
-    "offers-listing-widget": {
-      "title": "Ranking ofert",
-      "choose-criteria": "Wybierz kryterium sortowania",
-      "most-sold": "Najczęściej kupowane",
-      "least-sold": "Najrzadziej kupowane",
-      "highest-turnover": "Największy obrót",
-      "least-viewed": "Najmniej wyświetleń",
-      "see-all": "Zobacz wszystkie",
-      "icon": "Ikona",
-      "name": "Nazwa",
-      "sold-amount": "Sprzedane sztuki",
-      "turnover": "Obrót",
-      "views": "Wyświetlenia"
-    },
     "sales-chart": {
       "title": "Wykres sprzedaży",
       "error-no-id": "Nie wybrano sklepu",
@@ -123,9 +109,9 @@
       "month": "miesiąc",
       "group-by": "(Grupuj według)"
     },
-    "offers-ranking-widget": {
+    "offers-listing-widget": {
       "title": "Ranking ofert",
-      "choose-criteria": "Wybierz kryterium sortowania",
+      "choose-criteria": "(Wybierz kryterium sortowania)",
       "most-sold": "Najczęściej kupowane",
       "least-sold": "Najrzadziej kupowane",
       "highest-turnover": "Największy obrót",
@@ -136,6 +122,13 @@
       "sold-amount": "Sprzedane sztuki",
       "turnover": "Obrót",
       "views": "Wyświetlenia"
+    },
+    "opinions-widget": {
+      "title": "Opinie kupujących",
+      "select-sorting": "(Wybierz kryterium sortowania)",
+      "most-recent": "Najnowsze",
+      "best-rated": "Najlepiej oceniane",
+      "worst-rated": "Najgorzej oceniane"
     }
   }
 }

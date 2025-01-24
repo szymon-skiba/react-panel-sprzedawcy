@@ -49,7 +49,7 @@ const SalesChartWidget: React.FC = () => {
         timeRange: { from: "", to: "" }
     });
     const [activeSeries, setActiveSeries] = useState<number>(0);
-    const [timeUnit, setTimeUnit] = useState<'day' | 'week' | 'month'>('day');
+    const [timeUnit, setTimeUnit] = useState<'day' | 'week' | 'month'>('');
 
     if (!selectedShopId) {
         return (
@@ -119,7 +119,7 @@ const SalesChartWidget: React.FC = () => {
 
         const sortedKeys = Object.keys(groupedData).sort();
 
-        const groupingFormat = timeUnit === 'group-by' ? 'day' : timeUnit;
+        const groupingFormat = timeUnit;
         const labels = sortedKeys.map(key => {
             if (groupingFormat === 'day') {
                 return new Date(key).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long' });

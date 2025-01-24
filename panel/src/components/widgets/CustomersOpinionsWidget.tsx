@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Widget from "./Widget";
 import customerOpinions from "../../mocks/customerOpinions";
 import styles from "./CustomersOpinionsWidget.module.css";
@@ -6,6 +7,7 @@ import EmptyJewelIcon from "../../assets/jewel.png";
 import RedJewelIcon from "../../assets/jewel-red.png";
 
 const CustomersOpinionsWidget: React.FC = () => {
+  const { t } = useTranslation();
   const [selectedCriterion, setSelectedCriterion] = useState<string>("");
 
   const sortOpinions = () => {
@@ -24,19 +26,19 @@ const CustomersOpinionsWidget: React.FC = () => {
   const sortedOpinions = sortOpinions();
 
   return (
-    <Widget title={"Opinie klientów"}>
+    <Widget title={t("widgets.opinions-widget.title")}>
       <div className={styles.controlSection}>
         <div className={styles.inputGroup}>
-          <label>Wybierz kategorię sortowania:</label>
+          <label>{t("widgets.opinions-widget.select-sorting")}</label>
           <select
             value={selectedCriterion}
             onChange={(e) => setSelectedCriterion(e.target.value)}
             className={styles.select}
           >
-            <option value="">Wybierz kategorię sortowania</option>
-            <option value="latest">Najnowsze</option>
-            <option value="highestRating">Najwyższe oceny</option>
-            <option value="lowestRating">Najniższe oceny</option>
+            <option value="">{t("widgets.opinions-widget.select-sorting")}</option>
+            <option value="latest">{t("widgets.opinions-widget.most-recent")}</option>
+            <option value="highestRating">{t("widgets.opinions-widget.best-rated")}</option>
+            <option value="lowestRating">{t("widgets.opinions-widget.worst-rated")}</option>
           </select>
         </div>
       </div>
