@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import shops from "../mocks/shops";
 import { useTranslation } from "react-i18next";
 import styles from "./ShopSelectionPage.module.css";
 import ButtonComponent from "../components/buttons/ButtonComponent";

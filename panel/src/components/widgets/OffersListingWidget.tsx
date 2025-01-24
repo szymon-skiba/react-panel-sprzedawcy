@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./OrdersWidget.module.css"; // Wykorzystamy te same style co w OrdersWidget
+import styles from "./OrdersWidget.module.css";
 import Widget from "./Widget";
 import ButtonComponent from "../buttons/ButtonComponent";
 import { useTranslation } from "react-i18next";
@@ -40,9 +40,9 @@ const getWorst5OffersByAmountOfSoldItems = () => {
       if (aSold === bSold) {
         const aTurnover = findTurnoverForOffer(a.id);
         const bTurnover = findTurnoverForOffer(b.id);
-        return aTurnover - bTurnover; // Jeśli ilość sprzedanych taka sama, sortuj po wyświetleniach malejąco
+        return aTurnover - bTurnover; 
       }
-      return aSold - bSold; // Sortuj rosnąco po ilości sprzedanych
+      return aSold - bSold; 
     })
     .slice(0, 5);
 };
@@ -52,14 +52,14 @@ const getTop5OffersByTurnover = () => {
     .sort((a, b) => {
       const aTurnover = findTurnoverForOffer(a.id);
       const bTurnover = findTurnoverForOffer(b.id);
-      return bTurnover - aTurnover; // Sortuj malejąco po obrocie
+      return bTurnover - aTurnover; 
     })
     .slice(0, 5);
 };
 
 const getWorst5OffersByViews = () => {
   return [...offers]
-    .sort((a, b) => a.numberOfViews - b.numberOfViews) // Sortuj rosnąco po wyświetleniach
+    .sort((a, b) => a.numberOfViews - b.numberOfViews) 
     .slice(0, 5);
 };
 
@@ -94,7 +94,7 @@ const getWorst5OffersByViews = () => {
       </>
     );
 
-    if (selectedCriterion === "mostSold" || selectedCriterion === "leastSold") {
+    if (selectedCriterion === "mostSold" || selectedCriterion === "highestTurnover") {
       return (
         <tr>
           {commonHeaders}
@@ -126,7 +126,7 @@ const getWorst5OffersByViews = () => {
         </td>
         <td>{offer.name}</td>
         <td>{soldAmount}</td>
-        {(selectedCriterion === "mostSold" || selectedCriterion === "leastSold") ? (
+        {(selectedCriterion === "mostSold" || selectedCriterion === "highestTurnover") ? (
           <td>{turnover}</td>
         ) : (
           <td>{offer.numberOfViews}</td>

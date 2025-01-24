@@ -113,7 +113,11 @@
       "from": "From",
       "to": "To",
       "add-series": "Add series",
-      "select": "(Select)"
+      "select": "(Select)",
+      "day": "day",
+      "week": "week",
+      "month": "month",
+      "group-by": "(Group by)"
     },
     "offers-ranking-widget": {
       "title": "Offers Ranking",
